@@ -25,7 +25,7 @@ code {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0px 0px 10px 0.1px;
+  box-shadow: 0px 0px 3px 0.1px;
   padding: 5px;
 }
 .header_img {
@@ -131,7 +131,7 @@ h2 {
   color: white;
   padding-inline: 50px;
   border-radius: 10px;
-  background-color: rgb(226, 27, 27);
+  background-color: #27ae60
 }
 .recipe {
   display: flex;

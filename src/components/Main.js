@@ -61,7 +61,7 @@ setInput(e.target.value)
       </form>
       <section className="main_section">
         <ul className="main_ul">
-          {<h2 className="text-xl text-left">List of ingredients</h2>}
+          {hasIngredients && <h2 className="text-xl text-left">List of ingredients</h2>}
           {ingredients.map((items, index) => (
             <li className="main_li" key={index}>{items}</li>
           ))}
