@@ -133,7 +133,7 @@ code {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  filter: blur(6px) saturate(0.95);
+  filter: blur(15px) saturate(0.95);
   transform: scale(1.03);
   z-index: 0;
   opacity: 0.85;
