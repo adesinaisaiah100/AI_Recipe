@@ -50,7 +50,7 @@ export default function Main() {
 
   return (
     <main className="min-h-screen w-full main_section bg-black flex items-start justify-center p-4 sm:p-6">
-      <div className="w-full max-w-6xl mx-auto rounded-xl overflow-hidden">
+      <div className="w-full max-w-6xl mx-auto rounded-xl">
         <div className="backdrop-overlay p-4 md:p-6">
           <header className="mb-6">
             <h1 className="text-4xl md:text-5xl font-extrabold text-white drop-shadow-lg">Chef's Assistant</h1>
@@ -87,7 +87,7 @@ export default function Main() {
               </div>
 
               {recipe ? (
-                <article ref={recipeRef} className="bg-white p-6 rounded-lg shadow overflow-auto max-w-full max-h-[60vh] md:h-96">
+                <article ref={recipeRef} className="bg-white p-6 rounded-lg shadow max-w-full w-full">
                   <div dangerouslySetInnerHTML={{ __html: marked(recipe) }} />
                 </article>
               ) : (

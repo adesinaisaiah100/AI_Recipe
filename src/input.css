@@ -112,7 +112,8 @@ code {
 }
 .body-bg {
   position: relative;
-  overflow: hidden;
+  /* allow the background container to grow as the main content expands */
+  overflow: visible;
   min-height: 100vh;
   box-sizing: border-box;
   /* darkened gradient overlay + image for better contrast */
@@ -166,9 +167,5 @@ code {
     transform: scale(1.02);
   }
 
-  /* Make sure long recipe content can scroll within viewport */
-  article[ref] {
-    max-height: 60vh;
-    overflow: auto;
-  }
+  /* long recipe content will naturally expand the page; don't force a clipped height here */
 }
