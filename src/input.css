@@ -145,3 +145,30 @@ code {
 .header_h1 {
   font-family:inherit;
 }
+
+/* Small-screen improvements */
+@media (max-width: 640px) {
+  .recipe-card {
+    padding: 16px;
+  }
+
+  .recipe-card h1 {
+    font-size: 1.4rem;
+  }
+
+  .recipe-card h2 {
+    font-size: 1rem;
+  }
+
+  /* Ensure the blurred overlay doesn't block interactions on mobile */
+  .body-bg::before {
+    filter: blur(4px) saturate(0.9);
+    transform: scale(1.02);
+  }
+
+  /* Make sure long recipe content can scroll within viewport */
+  article[ref] {
+    max-height: 60vh;
+    overflow: auto;
+  }
+}

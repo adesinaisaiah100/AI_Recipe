@@ -17,7 +17,7 @@ root.render(
 
       <Header />      
       <div className='flex flex-col h-full justify-center items-center w-full p-5'>
-        <h1 className='h1 text-7xl text-center font-bold mb-10 text-neutral-200'>
+        <h1 className='h1 text-7xl text-center font-bold mb-10 text-neutral-200 max-sm:text-4xl'>
           You don't have recipes? No problem! Just enter the ingredients you have and let <span className='h1_span text-yellow-300'>Chef Claude</span> do the rest!
         </h1>
         <button  onClick={() => {
