@@ -5,9 +5,7 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+   font-family: "Montserrat", sans-serif;
   max-width: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -118,7 +116,7 @@ code {
   min-height: 100vh;
   box-sizing: border-box;
   /* darkened gradient overlay + image for better contrast */
-  background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url('./components/images/food2.png');
+  background-image: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.50)), url('./components/images/food2.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -133,7 +131,7 @@ code {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  filter: blur(15px) saturate(0.95);
+  filter: blur(6px) saturate(0.95);
   transform: scale(1.03);
   z-index: 0;
   opacity: 0.85;
@@ -145,5 +143,5 @@ code {
   z-index: 1;
 }
 .header_h1 {
-  font-family: 'Open Sans', sans-serif;
+  font-family:inherit;
 }
