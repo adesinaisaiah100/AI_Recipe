@@ -66,7 +66,7 @@ export default function Main() {
               onChange={handleSubmit}
             />
             <button type="button" className="px-5 py-3 rounded-2xl bg-white text-black font-medium shadow w-full sm:w-auto" onClick={handleAdd}>Add</button>
-            <button type="button" className="w-11 h-11 rounded-full bg-white/20 text-white flex items-center justify-center font-semibold text-2xl self-start sm:self-auto" onClick={handleClearAll} title="Start Over">+</button>
+            { recipe && <button type="button" className="w-11 h-11 rounded-full bg-white/20 text-white flex items-center justify-center font-semibold text-2xl self-start sm:self-auto" onClick={handleClearAll} title="Start Over">+</button>}
           </form>
 
           <section className="flex flex-col md:flex-row gap-6 w-full items-start">

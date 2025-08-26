@@ -1,7 +1,7 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import './input.css';
-import Food from "./components/images/food.png"
+import { Analytics } from '@vercel/analytics/react';
 import Main  from "./components/Main";
 import Header from "./components/header";
 // filepath: /c:/Users/Isaiah/project9/src/index.js
@@ -36,5 +36,6 @@ root.render(
      <div className='h-screen w-full flex flex-col justify-start items-center'>
         <Main/>
       </div>
+    <Analytics />
   </>
 )
